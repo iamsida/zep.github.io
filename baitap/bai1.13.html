@@ -21,14 +21,21 @@
     legend{
         color: crimson;
     }
+    fieldset.nonborder{
+        border: none;
+    }
     .center{
         text-align: center;
     }
+    #result{
+        color: blueviolet;
+    }
+        
 </style>
 <body>
     <div>
         <h2>Đăng ký du lịch</h2>
-        <form>
+        <form>  
             <table>
                 <tr>
                     <td>Họ và tên</td>
@@ -83,23 +90,13 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <form>
                             <fieldset>
                                 <legend>Số lượng đoàn khách</legend>
-                                <table>
-                                    <tr>
-                                        <td>Người lớn</td>
-                                        <td>
-                                            <input class="textSmall" type="text" name="soLuongNguoiLon">
-                                        </td>
-                                        <td>Trẻ em</td>
-                                        <td>
-                                            <input class="textSmall" type="text" name="soLuongTreEm">
-                                        </td>
-                                    </tr>
-                                </table>
+                                <label for="nguoiLon">Người lớn</label>
+                                <input type="text" class="textSmall" name="soNguoiLon">
+                                <label for="treEm">Trẻ em</label>
+                                <input type="text" class="textSmall" name="soTreEm">
                             </fieldset>
-                        </form>
                     </td>
                 </tr>
                 <tr>
@@ -110,7 +107,7 @@
                 </tr>
                 <tr>
                     <td class="center" colspan="2">
-                        <input type="button" id="button" value="Đồng ý" onclick="myFunticon()"> 
+                        <input type="button" value="Đồng ý" onclick="myFuntion()"> 
                     </td>
                 </tr>
                 <tr>
