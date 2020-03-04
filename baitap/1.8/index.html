@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo bảng</title>
+    <style>
+        th{
+            background-color: #CC6600;
+            color: #FFFFFF;
+        }
+        h2{
+            color: #CC6600
+        }
+        table{
+            border-collapse: collapse; 
+        }
+
+        td, tr, th{
+            border: solid 1px;
+            border-color: midnightblue;
+        }
+        td:first-child{
+            width: 40px;
+            text-align: center;
+        }
+        td:nth-child(2){
+            width: 240px;
+        }
+        tr:nth-child(even){
+            background-color: #FFFFFF;
+        }
+        tr:nth-child(odd){
+            background-color: #FFEDCA;
+        }
+    </style>
+</head>
+<body style="background-color: #FFEDCA;">
+    <img src="../../images/pho.jpg" alt="phohanoi" style="float: left; width: 150px;">
+    <div style="margin-left: 180px;">
+        <h2>Các món ngon Hà Nội</h2>
+        <table>
+            <th>STT</th>
+            <th>Tên món ăn</th>
+            <tr>
+                <td>1.</td>
+                <td>Bánh cuốn Thanh Trì</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Xôi Hà Nội</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Chả cá Lã Vọng</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Cháo Cóc</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Bánh Gai Ninh Giang</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Bún Thang Hà Nội</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Canh Lăng</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>Vịt quay Lạng Sơn</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
