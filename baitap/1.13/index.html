@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và các điều khiển</title>
+</head>
+<style>
+    h2{
+        color: indigo;
+    }
+    table,td{
+        border: solid 1px black;
+        border-collapse: collapse;
+        background-color: blanchedalmond;
+        color: cornflowerblue;
+    }
+    .textSmall{
+        width: 50px;
+    }
+    legend{
+        color: crimson;
+    }
+    .center{
+        text-align: center;
+    }
+</style>
+<body>
+    <div>
+        <h2>Đăng ký du lịch</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td>
+                        <input type="text" id="name">
+                    </td>       
+                </tr>   
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td>
+                        <input type="text" id="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Điện thoại </td>
+                    <td>
+                        <input type="text" id="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Khách Việt Nam</td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chọn tour</td>
+                    <td>
+                        <select name="chonTour" id="chonTour">
+                            <optgroup label="Miền Bắc">
+                                <option value="1">Hà Nội - Hạ Long - Sapa</option>
+                                <option value="2">Hà Nội - Chùa Hương - Ninh Bình</option>
+                                <option value="3">Hà Nội - Cát Bà - Tuần Châu</option>
+                            </optgroup>
+                            <optgroup label="Miền Trung">
+                                <option value="4">Huế - Bạch Mã - Đà Nẵng</option>
+                                <option value="5">Buôn Mê Thuật - Gia Lai - KonTum</option>
+                            </optgroup>
+                            <optgroup label="Miền Nam">
+                                <option value="6">TP.HCM - Cần Thơ - Cà Mau</option>
+                                <option value="7">TP.HCM - Mỹ Tho</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phương tiện</td>
+                    <td>
+                        <input type="radio" name="phuongtien" value="mayBay"> Máy bay
+                        <input type="radio" name="phuongtien" value="xeOTo"> Xe ô tô
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <form>
+                            <fieldset>
+                                <legend>Số lượng đoàn khách</legend>
+                                <table>
+                                    <tr>
+                                        <td>Người lớn</td>
+                                        <td>
+                                            <input class="textSmall" type="text" name="soLuongNguoiLon">
+                                        </td>
+                                        <td>Trẻ em</td>
+                                        <td>
+                                            <input class="textSmall" type="text" name="soLuongTreEm">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ghi chú thêm</td>
+                    <td>
+                        <textarea name="ghichu" id="ghichu" cols="30" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center" colspan="2">
+                        <input type="button" id="button" value="Đồng ý" onclick="myFunticon()"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center" colspan="2" id="result"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        function myFuntion(){
+            document.getElementById("result").innerHTML="Bạn đã đăng kí thành công!!!";
+        }
+    </script>
+</body>
+</html>
